@@ -36,7 +36,7 @@
 			// ChannelDetailLabel
 			// 
 			this.ChannelDetailLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.ChannelDetailLabel.BackColor = System.Drawing.Color.Black;
 			this.ChannelDetailLabel.Font = new System.Drawing.Font("MS UI Gothic", 9F);
 			this.ChannelDetailLabel.ForeColor = System.Drawing.Color.SpringGreen;

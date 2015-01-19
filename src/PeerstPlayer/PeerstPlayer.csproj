@@ -188,6 +188,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\MoviePlayer\FlashMoviePlayerControl.resx">
       <DependentUpon>FlashMoviePlayerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\MoviePlayer\VlcMediaPlayerControl.resx">
       <DependentUpon>VlcMediaPlayerControl.cs</DependentUpon>

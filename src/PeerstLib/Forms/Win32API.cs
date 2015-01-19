@@ -48,12 +48,10 @@ namespace PeerstLib.Controls
 		[DllImport("user32.dll")]
 		public static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
 
-<<<<<<< HEAD
 		[DllImport("kernel32.dll")]
 		public static extern int LCMapStringW(int Local, MapFlags dwMapFlags,
 			[MarshalAs(UnmanagedType.LPWStr)]string lpSrcStr, int cchSrc,
 			[MarshalAs(UnmanagedType.LPWStr)]string lpDestStr, int cchDest);
-=======
 
 		/// <summary>
 		/// 指定されたウィンドウの表示状態を設定し、そのウィンドウの通常表示のとき、最小化されたとき、および最大化されたときの位置を設定します。
@@ -72,8 +70,6 @@ namespace PeerstLib.Controls
 		/// <returns></returns>
 		[DllImport("user32.dll")]
 		public static extern bool GetWindowPlacement(IntPtr hWnd, out WINDOWPLACEMENT lpwndpl);
-
->>>>>>> 210804e... ビューアを最小化した状態で閉じた時に位置・サイズの保存する値がおかしくなっていたのを修正
 	}
 
 	// ウィンドウ枠の当たり判定

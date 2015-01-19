@@ -124,6 +124,9 @@ namespace PeerstPlayer.Forms.Setting
 				// VLC
 				vlcFolderTextBox.Text = PlayerSettings.VlcFolder;
 
+				// VLC
+				vlcFolderTextBox.Text = PlayerSettings.VlcFolder;
+
 				// 動画再生開始時のコマンド
 				movieStartComboBox.Items.Clear();
 				foreach (Commands command in movieStartCommandList)
@@ -272,7 +275,7 @@ namespace PeerstPlayer.Forms.Setting
 				if (gestureing == false) return;
 
 				mouseGesture.Moving(e.Location);
-                string gesture = mouseGesture.ToString();
+				string gesture = mouseGesture.ToString();
 
 				int index = shortcutListView.SelectedIndices[0];
 				if (string.IsNullOrEmpty(gesture)) return;
@@ -282,32 +285,32 @@ namespace PeerstPlayer.Forms.Setting
 				shortcutListView.Items[index].SubItems[2].Text = gesture;
 				shortcutListView.Items[index].SubItems[2].Tag = null;
 			};
-            shortcutListView.MouseUp += (sender, e) =>
-            {
-                if (shortcutListView.SelectedIndices.Count <= 0) return;
-                if (gestureing == false) return;
+			shortcutListView.MouseUp += (sender, e) =>
+			{
+			if (shortcutListView.SelectedIndices.Count <= 0) return;
+				if (gestureing == false) return;
 
-                mouseGesture.Moving(e.Location);
-                string gesture = mouseGesture.ToString();
+				mouseGesture.Moving(e.Location);
+				string gesture = mouseGesture.ToString();
 
-                int index = shortcutListView.SelectedIndices[0];
-                if (string.IsNullOrEmpty(gesture)) return;
+				int index = shortcutListView.SelectedIndices[0];
+				if (string.IsNullOrEmpty(gesture)) return;
 
-                // 同じジェスチャを削除
-                foreach (ListViewItem item in shortcutListView.Items)
-                {
-                    string text = item.SubItems[2].Text;
-                    if (gesture == text)
-                    {
-                        item.SubItems[2].Text = "-";
-                        item.SubItems[2].Tag = null;
-                    }
-                }
+				// 同じジェスチャを削除
+				foreach (ListViewItem item in shortcutListView.Items)
+				{
+					string text = item.SubItems[2].Text;
+					if (gesture == text)
+					{
+						item.SubItems[2].Text = "-";
+						item.SubItems[2].Tag = null;
+					}
+				}
 
-                // ジェスチャを登録
-                shortcutListView.Items[index].SubItems[2].Text = gesture;
-                shortcutListView.Items[index].SubItems[2].Tag = null;
-            };
+			// ジェスチャを登録
+				shortcutListView.Items[index].SubItems[2].Text = gesture;
+				shortcutListView.Items[index].SubItems[2].Tag = null;
+			};
 			shortcutListView.MouseUp += (sender, e) => gestureing = false;
 		}
 
@@ -448,6 +451,9 @@ namespace PeerstPlayer.Forms.Setting
 			// FLV
 			PlayerSettings.Gpu = flvGpuCheckBox.Checked;
 			PlayerSettings.Rtmp = useRtmpCheckBox.Checked;
+
+			// VLC
+			PlayerSettings.VlcFolder = vlcFolderTextBox.Text;
 
 			// VLC
 			PlayerSettings.VlcFolder = vlcFolderTextBox.Text;
