@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace PeerstLib.Controls
 {
@@ -47,10 +48,32 @@ namespace PeerstLib.Controls
 		[DllImport("user32.dll")]
 		public static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
 
+<<<<<<< HEAD
 		[DllImport("kernel32.dll")]
 		public static extern int LCMapStringW(int Local, MapFlags dwMapFlags,
 			[MarshalAs(UnmanagedType.LPWStr)]string lpSrcStr, int cchSrc,
 			[MarshalAs(UnmanagedType.LPWStr)]string lpDestStr, int cchDest);
+=======
+
+		/// <summary>
+		/// 指定されたウィンドウの表示状態を設定し、そのウィンドウの通常表示のとき、最小化されたとき、および最大化されたときの位置を設定します。
+		/// </summary>
+		/// <param name="hWnd">ウィンドウのハンドル</param>
+		/// <param name="lpwndpl">位置データ</param>
+		/// <returns></returns>
+		[DllImport("user32.dll")]
+		public static extern bool SetWindowPlacement(IntPtr hWnd, ref WINDOWPLACEMENT lpwndpl);
+
+		/// <summary>
+		/// 指定されたウィンドウの表示状態、および通常表示のとき、最小化されたとき、最大化されたときの位置を返します。
+		/// </summary>
+		/// <param name="hWnd">ウィンドウのハンドル</param>
+		/// <param name="lpwndpl">位置データ</param>
+		/// <returns></returns>
+		[DllImport("user32.dll")]
+		public static extern bool GetWindowPlacement(IntPtr hWnd, out WINDOWPLACEMENT lpwndpl);
+
+>>>>>>> 210804e... ビューアを最小化した状態で閉じた時に位置・サイズの保存する値がおかしくなっていたのを修正
 	}
 
 	// ウィンドウ枠の当たり判定
@@ -119,5 +142,31 @@ namespace PeerstLib.Controls
 		public int top;
 		public int right;
 		public int bottom;
+	}
+
+	[StructLayout(LayoutKind.Sequential)]
+	public struct WINDOWPLACEMENT
+	{
+		public int length;
+		public int flags;
+		public ShowCmd showCmd;
+		public POINT minPosition;
+		public POINT maxPosition;
+		public RECT normalPosition;
+	}
+
+	public enum ShowCmd
+	{
+		HIDE = 0,
+		SHOWNORMAL = 1,
+		SHOWMINIMIZED = 2,
+		SHOWMAXIMIZED = 3,
+		SHOWNOACTIVATE = 4,
+		SHOW = 5,
+		MINIMIZE = 6,
+		SHOWMINNOACTIVE = 7,
+		SHOWNA = 8,
+		RESTORE = 9,
+		SHOWDEFAULT = 10,
 	}
 }
