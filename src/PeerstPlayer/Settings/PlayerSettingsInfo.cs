@@ -149,9 +149,15 @@ namespace PeerstPlayer.Settings
 		public bool Gpu = true;
 
 		/// <summary>
+<<<<<<< HEAD
 		/// VLCのフォルダ
 		/// </summary>
 		public string VlcFolder;
+=======
+		/// FLVでRTMP再生を使うか
+		/// </summary>
+		public bool Rtmp = false;
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 
 		// - ステータスバーフォント : Font
 		// - ステータスバー表示項目 : List

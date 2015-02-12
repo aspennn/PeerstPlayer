@@ -59,10 +59,18 @@ namespace PeerstPlayer.Forms.Setting
 			this.saveReturnPositionCheckBox = new System.Windows.Forms.CheckBox();
 			this.disconnectRealyOnCloseCheckBox = new System.Windows.Forms.CheckBox();
 			this.statusBarGroupBox = new System.Windows.Forms.GroupBox();
+			this.hideStatusBarOnFullscreenCheckBox = new System.Windows.Forms.CheckBox();
 			this.listenerNumberCheckBox = new System.Windows.Forms.CheckBox();
 			this.displayBitrateCheckBox = new System.Windows.Forms.CheckBox();
 			this.displayFpsCheckBox = new System.Windows.Forms.CheckBox();
 			this.settingPage2 = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
+=======
+			this.vlcFolderGroupBox = new System.Windows.Forms.GroupBox();
+			this.browseVlcFolderButton = new System.Windows.Forms.Button();
+			this.vlcFolderTextBox = new System.Windows.Forms.TextBox();
+			this.vlcFolderLabel = new System.Windows.Forms.Label();
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 			this.flvGroupBox = new System.Windows.Forms.GroupBox();
 			this.flvGpuCheckBox = new System.Windows.Forms.CheckBox();
 			this.threadGroupBox = new System.Windows.Forms.GroupBox();
@@ -79,10 +87,6 @@ namespace PeerstPlayer.Forms.Setting
 			this.screenshotFolderLabel = new System.Windows.Forms.Label();
 			this.shortcutPage = new System.Windows.Forms.TabPage();
 			this.keyLabel = new System.Windows.Forms.Label();
-			this.shortcutListView = new PeerstLib.Controls.BufferedListView();
-			this.commandColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.shortcutColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.gestureColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.saveButton = new System.Windows.Forms.Button();
 			this.cancelButton = new System.Windows.Forms.Button();
 			this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
@@ -95,11 +99,19 @@ namespace PeerstPlayer.Forms.Setting
 			this.minuteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.secondToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.channelNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
 			this.vlcFolderGroupBox = new System.Windows.Forms.GroupBox();
 			this.vlcFolderTextBox = new System.Windows.Forms.TextBox();
 			this.vlcFolderLabel = new System.Windows.Forms.Label();
 			this.browseVlcFolderButton = new System.Windows.Forms.Button();
 			this.hideStatusBarOnFullscreenCheckBox = new System.Windows.Forms.CheckBox();
+=======
+			this.shortcutListView = new PeerstLib.Controls.BufferedListView();
+			this.commandColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.shortcutColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.gestureColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.useRtmpCheckBox = new System.Windows.Forms.CheckBox();
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 			this.tabControl.SuspendLayout();
 			this.settingPage.SuspendLayout();
 			this.volumeChangeGroupBox.SuspendLayout();
@@ -109,12 +121,19 @@ namespace PeerstPlayer.Forms.Setting
 			this.closeGroupBox.SuspendLayout();
 			this.statusBarGroupBox.SuspendLayout();
 			this.settingPage2.SuspendLayout();
+<<<<<<< HEAD
+=======
+			this.vlcFolderGroupBox.SuspendLayout();
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 			this.flvGroupBox.SuspendLayout();
 			this.threadGroupBox.SuspendLayout();
 			this.screenshotGroupBox.SuspendLayout();
 			this.shortcutPage.SuspendLayout();
 			this.screenshotContextMenuStrip.SuspendLayout();
+<<<<<<< HEAD
 			this.vlcFolderGroupBox.SuspendLayout();
+=======
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 			this.SuspendLayout();
 			// 
 			// tabControl
@@ -411,6 +430,16 @@ namespace PeerstPlayer.Forms.Setting
 			this.statusBarGroupBox.TabStop = false;
 			this.statusBarGroupBox.Text = "ステータスバー";
 			// 
+			// hideStatusBarOnFullscreenCheckBox
+			// 
+			this.hideStatusBarOnFullscreenCheckBox.AutoSize = true;
+			this.hideStatusBarOnFullscreenCheckBox.Location = new System.Drawing.Point(17, 84);
+			this.hideStatusBarOnFullscreenCheckBox.Name = "hideStatusBarOnFullscreenCheckBox";
+			this.hideStatusBarOnFullscreenCheckBox.Size = new System.Drawing.Size(180, 16);
+			this.hideStatusBarOnFullscreenCheckBox.TabIndex = 2;
+			this.hideStatusBarOnFullscreenCheckBox.Text = "最大化でステータスバーを非表示";
+			this.hideStatusBarOnFullscreenCheckBox.UseVisualStyleBackColor = true;
+			// 
 			// listenerNumberCheckBox
 			// 
 			this.listenerNumberCheckBox.AutoSize = true;
@@ -455,12 +484,59 @@ namespace PeerstPlayer.Forms.Setting
 			this.settingPage2.Text = "各種設定2";
 			this.settingPage2.UseVisualStyleBackColor = true;
 			// 
+<<<<<<< HEAD
 			// flvGroupBox
 			// 
 			this.flvGroupBox.Controls.Add(this.flvGpuCheckBox);
 			this.flvGroupBox.Location = new System.Drawing.Point(11, 192);
 			this.flvGroupBox.Name = "flvGroupBox";
 			this.flvGroupBox.Size = new System.Drawing.Size(210, 50);
+=======
+			// vlcFolderGroupBox
+			// 
+			this.vlcFolderGroupBox.Controls.Add(this.browseVlcFolderButton);
+			this.vlcFolderGroupBox.Controls.Add(this.vlcFolderTextBox);
+			this.vlcFolderGroupBox.Controls.Add(this.vlcFolderLabel);
+			this.vlcFolderGroupBox.Location = new System.Drawing.Point(11, 287);
+			this.vlcFolderGroupBox.Name = "vlcFolderGroupBox";
+			this.vlcFolderGroupBox.Size = new System.Drawing.Size(430, 34);
+			this.vlcFolderGroupBox.TabIndex = 3;
+			this.vlcFolderGroupBox.TabStop = false;
+			this.vlcFolderGroupBox.Text = "VLC";
+			// 
+			// browseVlcFolderButton
+			// 
+			this.browseVlcFolderButton.Location = new System.Drawing.Point(374, 10);
+			this.browseVlcFolderButton.Name = "browseVlcFolderButton";
+			this.browseVlcFolderButton.Size = new System.Drawing.Size(42, 23);
+			this.browseVlcFolderButton.TabIndex = 4;
+			this.browseVlcFolderButton.Text = "参照";
+			this.browseVlcFolderButton.UseVisualStyleBackColor = true;
+			// 
+			// vlcFolderTextBox
+			// 
+			this.vlcFolderTextBox.Location = new System.Drawing.Point(107, 12);
+			this.vlcFolderTextBox.Name = "vlcFolderTextBox";
+			this.vlcFolderTextBox.Size = new System.Drawing.Size(250, 19);
+			this.vlcFolderTextBox.TabIndex = 3;
+			// 
+			// vlcFolderLabel
+			// 
+			this.vlcFolderLabel.AutoSize = true;
+			this.vlcFolderLabel.Location = new System.Drawing.Point(18, 15);
+			this.vlcFolderLabel.Name = "vlcFolderLabel";
+			this.vlcFolderLabel.Size = new System.Drawing.Size(72, 12);
+			this.vlcFolderLabel.TabIndex = 2;
+			this.vlcFolderLabel.Text = "VLCのフォルダ";
+			// 
+			// flvGroupBox
+			// 
+			this.flvGroupBox.Controls.Add(this.useRtmpCheckBox);
+			this.flvGroupBox.Controls.Add(this.flvGpuCheckBox);
+			this.flvGroupBox.Location = new System.Drawing.Point(11, 192);
+			this.flvGroupBox.Name = "flvGroupBox";
+			this.flvGroupBox.Size = new System.Drawing.Size(210, 68);
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 			this.flvGroupBox.TabIndex = 2;
 			this.flvGroupBox.TabStop = false;
 			this.flvGroupBox.Text = "FLV";
@@ -617,40 +693,6 @@ namespace PeerstPlayer.Forms.Setting
 			this.keyLabel.Text = "【登録方法】\r\n　ショートカット：コマンドを選択後、キー入力\r\n　マウスジェスチャ：コマンドを選択後、マウスジェスチャ入力\r\n【削除方法】\r\n　ショートカット：削" +
     "除したいショートカットをダブルクリック(左)\r\n　マウスジェスチャ：削除したいジェスチャをダブルクリック(右)";
 			// 
-			// shortcutListView
-			// 
-			this.shortcutListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.shortcutListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.commandColumnHeader,
-            this.shortcutColumnHeader,
-            this.gestureColumnHeader});
-			this.shortcutListView.FullRowSelect = true;
-			this.shortcutListView.GridLines = true;
-			this.shortcutListView.Location = new System.Drawing.Point(8, 6);
-			this.shortcutListView.MultiSelect = false;
-			this.shortcutListView.Name = "shortcutListView";
-			this.shortcutListView.Size = new System.Drawing.Size(434, 252);
-			this.shortcutListView.TabIndex = 0;
-			this.shortcutListView.UseCompatibleStateImageBehavior = false;
-			this.shortcutListView.View = System.Windows.Forms.View.Details;
-			// 
-			// commandColumnHeader
-			// 
-			this.commandColumnHeader.Text = "コマンド";
-			this.commandColumnHeader.Width = 140;
-			// 
-			// shortcutColumnHeader
-			// 
-			this.shortcutColumnHeader.Text = "ショートカット";
-			this.shortcutColumnHeader.Width = 127;
-			// 
-			// gestureColumnHeader
-			// 
-			this.gestureColumnHeader.Text = "マウスジェスチャ";
-			this.gestureColumnHeader.Width = 127;
-			// 
 			// saveButton
 			// 
 			this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -685,57 +727,58 @@ namespace PeerstPlayer.Forms.Setting
             this.secondToolStripMenuItem,
             this.channelNameToolStripMenuItem});
 			this.screenshotContextMenuStrip.Name = "screenshotContextMenuStrip";
-			this.screenshotContextMenuStrip.Size = new System.Drawing.Size(129, 180);
+			this.screenshotContextMenuStrip.Size = new System.Drawing.Size(124, 180);
 			// 
 			// year2ToolStripMenuItem
 			// 
 			this.year2ToolStripMenuItem.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
 			this.year2ToolStripMenuItem.Name = "year2ToolStripMenuItem";
-			this.year2ToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.year2ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.year2ToolStripMenuItem.Text = "年(2桁)";
 			// 
 			// year4ToolStripMenuItem
 			// 
 			this.year4ToolStripMenuItem.Name = "year4ToolStripMenuItem";
-			this.year4ToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.year4ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.year4ToolStripMenuItem.Text = "年(4桁)";
 			// 
 			// monthToolStripMenuItem
 			// 
 			this.monthToolStripMenuItem.Name = "monthToolStripMenuItem";
-			this.monthToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.monthToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.monthToolStripMenuItem.Text = "月";
 			// 
 			// dayToolStripMenuItem
 			// 
 			this.dayToolStripMenuItem.Name = "dayToolStripMenuItem";
-			this.dayToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.dayToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.dayToolStripMenuItem.Text = "日";
 			// 
 			// hourToolStripMenuItem
 			// 
 			this.hourToolStripMenuItem.Name = "hourToolStripMenuItem";
-			this.hourToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.hourToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.hourToolStripMenuItem.Text = "時間";
 			// 
 			// minuteToolStripMenuItem
 			// 
 			this.minuteToolStripMenuItem.Name = "minuteToolStripMenuItem";
-			this.minuteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.minuteToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.minuteToolStripMenuItem.Text = "分";
 			// 
 			// secondToolStripMenuItem
 			// 
 			this.secondToolStripMenuItem.Name = "secondToolStripMenuItem";
-			this.secondToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.secondToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.secondToolStripMenuItem.Text = "秒";
 			// 
 			// channelNameToolStripMenuItem
 			// 
 			this.channelNameToolStripMenuItem.Name = "channelNameToolStripMenuItem";
-			this.channelNameToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.channelNameToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.channelNameToolStripMenuItem.Text = "チャンネル名";
 			// 
+<<<<<<< HEAD
 			// vlcFolderGroupBox
 			// 
 			this.vlcFolderGroupBox.Controls.Add(this.browseVlcFolderButton);
@@ -782,6 +825,51 @@ namespace PeerstPlayer.Forms.Setting
 			this.hideStatusBarOnFullscreenCheckBox.TabIndex = 2;
 			this.hideStatusBarOnFullscreenCheckBox.Text = "最大化でステータスバーを非表示";
 			this.hideStatusBarOnFullscreenCheckBox.UseVisualStyleBackColor = true;
+=======
+			// shortcutListView
+			// 
+			this.shortcutListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.shortcutListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.commandColumnHeader,
+            this.shortcutColumnHeader,
+            this.gestureColumnHeader});
+			this.shortcutListView.FullRowSelect = true;
+			this.shortcutListView.GridLines = true;
+			this.shortcutListView.Location = new System.Drawing.Point(8, 6);
+			this.shortcutListView.MultiSelect = false;
+			this.shortcutListView.Name = "shortcutListView";
+			this.shortcutListView.Size = new System.Drawing.Size(434, 252);
+			this.shortcutListView.TabIndex = 0;
+			this.shortcutListView.UseCompatibleStateImageBehavior = false;
+			this.shortcutListView.View = System.Windows.Forms.View.Details;
+			// 
+			// commandColumnHeader
+			// 
+			this.commandColumnHeader.Text = "コマンド";
+			this.commandColumnHeader.Width = 140;
+			// 
+			// shortcutColumnHeader
+			// 
+			this.shortcutColumnHeader.Text = "ショートカット";
+			this.shortcutColumnHeader.Width = 127;
+			// 
+			// gestureColumnHeader
+			// 
+			this.gestureColumnHeader.Text = "マウスジェスチャ";
+			this.gestureColumnHeader.Width = 127;
+			// 
+			// useRtmpCheckBox
+			// 
+			this.useRtmpCheckBox.AutoSize = true;
+			this.useRtmpCheckBox.Location = new System.Drawing.Point(20, 40);
+			this.useRtmpCheckBox.Name = "useRtmpCheckBox";
+			this.useRtmpCheckBox.Size = new System.Drawing.Size(107, 16);
+			this.useRtmpCheckBox.TabIndex = 1;
+			this.useRtmpCheckBox.Text = "RTMP再生を使う";
+			this.useRtmpCheckBox.UseVisualStyleBackColor = true;
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 			// 
 			// PlayerSettingView
 			// 
@@ -808,6 +896,11 @@ namespace PeerstPlayer.Forms.Setting
 			this.statusBarGroupBox.ResumeLayout(false);
 			this.statusBarGroupBox.PerformLayout();
 			this.settingPage2.ResumeLayout(false);
+<<<<<<< HEAD
+=======
+			this.vlcFolderGroupBox.ResumeLayout(false);
+			this.vlcFolderGroupBox.PerformLayout();
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 			this.flvGroupBox.ResumeLayout(false);
 			this.flvGroupBox.PerformLayout();
 			this.threadGroupBox.ResumeLayout(false);
@@ -817,8 +910,11 @@ namespace PeerstPlayer.Forms.Setting
 			this.shortcutPage.ResumeLayout(false);
 			this.shortcutPage.PerformLayout();
 			this.screenshotContextMenuStrip.ResumeLayout(false);
+<<<<<<< HEAD
 			this.vlcFolderGroupBox.ResumeLayout(false);
 			this.vlcFolderGroupBox.PerformLayout();
+=======
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 			this.ResumeLayout(false);
 
 		}
@@ -894,5 +990,9 @@ namespace PeerstPlayer.Forms.Setting
 		private System.Windows.Forms.TextBox vlcFolderTextBox;
 		private System.Windows.Forms.Label vlcFolderLabel;
 		private System.Windows.Forms.CheckBox hideStatusBarOnFullscreenCheckBox;
+<<<<<<< HEAD
+=======
+		private System.Windows.Forms.CheckBox useRtmpCheckBox;
+>>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
 	}
 }
