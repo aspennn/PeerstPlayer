@@ -156,8 +156,12 @@ namespace PeerstPlayer.Settings
 =======
 		/// FLVでRTMP再生を使うか
 		/// </summary>
+<<<<<<< HEAD
 		public bool Rtmp = false;
 >>>>>>> b1df9a9... FLVのデフォルト再生方法をHTTPに戻して、RTMPで再生する設定を追加した
+=======
+		public bool Rtmp = true;
+>>>>>>> 448b9f7... RTMP通信の修正
 
 		// - ステータスバーフォント : Font
 		// - ステータスバー表示項目 : List
