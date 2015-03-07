@@ -56,7 +56,14 @@ namespace LibVlcWrapper
 					{
 						var stringBuilder = new StringBuilder(256);
 						Win32API.GetClassName(handle, stringBuilder, stringBuilder.Capacity);
-						if (stringBuilder.ToString().IndexOf("VLC MSW") != -1)
+						// VLC (Direct3D output)
+						// VLC (Direct2D output)
+						// VLC (WinGDI output)
+						// VLC (OpenGL output)
+						// VLC (hardware YUV overlay DirectX output)
+						// クラス名 VLC video output 0000000005DF3DF0
+						if ((stringBuilder.ToString().IndexOf("VLC") != -1 && stringBuilder.ToString().IndexOf("output") != -1) ||
+							stringBuilder.ToString().IndexOf("VLC MSW video") != -1) 
 						{
 							uint processId;
 							uint threadId = Win32API.GetWindowThreadProcessId(handle, out processId);
