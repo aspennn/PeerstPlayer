@@ -114,6 +114,7 @@ namespace PeerstPlayer.Forms.Setting
 			this.toolStrip.Size = new System.Drawing.Size(99, 25);
 			this.toolStrip.TabIndex = 2;
 			this.toolStrip.Visible = false;
+			this.toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
 			// 
 			// openViewerToolStripButton
 			// 
