@@ -110,7 +110,7 @@ namespace PeerstPlayer.Forms.Setting
 			this.toolStrip.Location = new System.Drawing.Point(381, 0);
 			this.toolStrip.Name = "toolStrip";
 			this.toolStrip.Padding = new System.Windows.Forms.Padding(0);
-			this.toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+			this.toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
 			this.toolStrip.Size = new System.Drawing.Size(99, 25);
 			this.toolStrip.TabIndex = 2;
 			this.toolStrip.Visible = false;
